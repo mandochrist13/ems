@@ -4,6 +4,9 @@ import { Inter } from "next/font/google"
 import { Playfair_Display } from "next/font/google"
 import Nav from "@/components/nav"
 import Footer from "@/components/footer"
+import Head from 'next/head';
+import Link from "next/link"
+
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif" })
@@ -21,6 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <Link rel="icon" href="/favicon.ico" ></Link>
+      </Head>
       <body className={`${inter.variable} ${playfair.variable} font-sans`}><Nav/>{children} <Footer/></body>
     </html>
   )

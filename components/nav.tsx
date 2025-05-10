@@ -96,7 +96,7 @@ const personalizedJewelrySubmenu: SubMenuItem[] = [
   },
   {
     title: "Bagues personnalisées",
-    href: "/categorie/bijoux_perso/bague",
+    href: "/categorie/bijoux_perso/bague_perso",
     description:
       "Symboles d'attachement ou de style, elles captivent par leur éclat et leur singularité.",
   },

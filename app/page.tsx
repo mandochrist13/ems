@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronRight, ShoppingBag} from "lucide-react";
+import { ChevronRight, Search } from "lucide-react";
 import produits from "@/data/produit";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -10,9 +10,9 @@ export default function Home() {
     <div className="flex min-h-screen flex-col bg-white">
       <main className="flex-1">
         <section className="relative h-[80vh] overflow-hidden">
-          <div className="absolute inset-0 bg-black/40 z-10"></div>
+          <div className="absolute inset-0 bg-black/50 z-10"></div>
           <div
-            className="absolute inset-0 bg-[url('/images/ban.jpg')] bg-cover bg-top bg-fixed"
+            className="absolute inset-0 bg-[url('/images/Bannière.png')] bg-cover bg-top bg-fixed"
             aria-hidden="true"
           ></div>
 
@@ -32,12 +32,14 @@ export default function Home() {
                 Découvrez notre collection exclusive de bijoux de luxe
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row justify-center">
-                <Button className="bg-white text-black hover:bg-white/90">
-                  Découvrir la Collection
-                </Button>
+                <Link href="/collections">
+                  <Button className="bg-white hover:bg-slate-400 text-black">
+                    Découvrir la Collection
+                  </Button>
+                </Link>
                 <Button
                   variant="default"
-                  className="border-white text-white hover:bg-white/20"
+                  className="border-white text-white hover:bg-black/50"
                 >
                   Nouveautés
                 </Button>
@@ -152,15 +154,13 @@ export default function Home() {
                     height={400}
                     className="aspect-[3/4] object-cover w-full transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="p-4">
+                  <div className="p-4 flex flex-col justify-between">
                     <h3 className="font-medium">{item.titre}</h3>
                     <p className="text-sm text-gray-500">{item.description}</p>
                     <div className="mt-2 flex items-center justify-between">
-                      <span className="font-semibold">
-                        {item.prix} F CFA
-                      </span>
+                      <p className="font-semibold">{item.prix} F CFA</p>
                       <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
-                        <ShoppingBag className="h-4 w-4" />
+                        <Search className="h-4 w-4" />
                         <span className="sr-only">Ajouter au panier</span>
                       </Button>
                     </div>
@@ -169,6 +169,7 @@ export default function Home() {
               ))}
             </div>
             <div className="mt-12 text-center">
+              <Link href="/collections"></Link>
               <Button className="bg-black text-white hover:bg-black/90">
                 Voir Toute la Collection
               </Button>
@@ -184,7 +185,9 @@ export default function Home() {
                   L'Art de la Joaillerie
                 </h2>
                 <p className="text-gray-500 md:text-xl">
-                Chaque bijou est conçu avec le plus grand soin, en utilisant des matériaux de qualité, pour offrir un rendu élégant et durable à un prix accessible à tous.
+                  Chaque bijou est conçu avec le plus grand soin, en utilisant
+                  des matériaux de qualité, pour offrir un rendu élégant et
+                  durable à un prix accessible à tous.
                 </p>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button className="bg-black text-white hover:bg-black/90">
@@ -200,7 +203,7 @@ export default function Home() {
               </div>
               <div className="relative aspect-video overflow-hidden rounded-lg">
                 <Image
-                  src="/images/Bannière.png?height=720&width=1280"
+                  src="/images/ban.jpg?height=720&width=1280"
                   alt="Atelier de joaillerie"
                   width={1280}
                   height={720}
@@ -211,7 +214,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-12 md:py-24 bg-black text-white">
+        {/* <section className="py-12 md:py-24 bg-black text-white">
           <div className="container px-4 md:px-6 text-center">
             <h2 className="text-3xl font-serif font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8">
               Inscrivez-vous à Notre Newsletter
@@ -231,9 +234,8 @@ export default function Home() {
               </Button>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
-      
     </div>
   );
 }

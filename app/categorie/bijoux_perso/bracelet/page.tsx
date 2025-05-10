@@ -64,7 +64,7 @@ export default function BraceletsPage() {
 
   return (
     <CategoryLayout
-      title="Bracelets"
+      title="Bracelets personnalisés"
       description="Explorez notre collection de bracelets en or, alliant élégance et modernité. Des pièces intemporelles qui sublimeront votre poignet pour toutes les occasions, du plus simple au plus sophistiqué."
       products={products}
       heroImage="/images/twisted-bracelet.png"

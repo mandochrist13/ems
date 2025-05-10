@@ -64,7 +64,7 @@ export default function BaguesPage() {
 
   return (
     <CategoryLayout
-      title="Bagues"
+      title="Bagues Personalisées"
       description="Découvrez notre collection de bagues en or, des pièces intemporelles qui symbolisent l'amour, l'engagement ou simplement votre style personnel. Chaque bague est conçue avec précision pour sublimer votre main avec élégance."
       products={products}
       heroImage="/placeholder.svg?height=1000&width=2000"

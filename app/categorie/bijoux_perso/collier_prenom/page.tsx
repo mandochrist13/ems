@@ -64,7 +64,7 @@ export default function ColliersPage() {
 
   return (
     <CategoryLayout
-      title="Colliers"
+      title="Colliers Personnalisés"
       description="Notre collection de colliers en or allie tradition et modernité. Des pièces uniques qui sublimeront votre décolleté et apporteront une touche d'élégance à toutes vos tenues, du quotidien aux occasions spéciales."
       products={products}
       heroImage="/images/crystal-necklace.png"

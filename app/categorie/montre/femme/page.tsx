@@ -50,7 +50,7 @@ export default function MontresPage() {
 
   return (
     <CategoryLayout
-      title="Montres"
+      title="Montres Femme"
       description="Nos montres allient précision horlogère et élégance intemporelle. Chaque pièce est conçue avec des matériaux de haute qualité pour vous offrir un accessoire à la fois fonctionnel et raffiné qui traversera les époques."
       products={products}
       heroImage="/placeholder.svg?height=1000&width=2000"

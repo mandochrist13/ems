@@ -37,12 +37,13 @@ export default function Home() {
                     Découvrir la Collection
                   </Button>
                 </Link>
-                <Button
+                <Link href="/"><Button
                   variant="default"
                   className="border-white text-white hover:bg-black/50"
                 >
                   Nouveautés
-                </Button>
+                </Button></Link>
+                
               </div>
             </div>
           </div>

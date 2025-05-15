@@ -1,41 +1,58 @@
-import Link from "next/link"
-import Image from "next/image"
-import { ChevronLeft } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import { ChevronLeft } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
 interface Product {
-  id: number
-  name: string
-  price: number
-  image: string
-  slug: string
-  isNew?: boolean
-  isBestseller?: boolean
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+  slug: string;
+  isNew?: boolean;
+  isBestseller?: boolean;
+  lien?: string; // Optional link property for the product
 }
 
 interface CategoryLayoutProps {
-  title: string
-  description: string
-  products: Product[]
-  heroImage: string
+  title: string;
+  description: string;
+  products: Product[];
+  heroImage: string;
 }
 
-export default function CategoryLayout({ title, description, products, heroImage }: CategoryLayoutProps) {
+export default function CategoryLayout({
+  title,
+  description,
+  products,
+  heroImage,
+}: CategoryLayoutProps) {
   return (
     <div className="bg-white">
       <div className="relative h-[40vh] md:h-[50vh] w-full overflow-hidden">
-        <Image src={heroImage || "/placeholder.svg"} alt={title} fill className="object-cover" priority />
+        <Image
+          src={heroImage || "/placeholder.svg"}
+          alt={title}
+          fill
+          className="object-cover"
+          priority
+        />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-3xl md:text-5xl font-serif font-bold text-white mb-4">{title}</h1>
+            <h1 className="text-3xl md:text-5xl font-serif font-bold text-white mb-4">
+              {title}
+            </h1>
             <div className="w-20 h-1 bg-yellow-400 mx-auto"></div>
           </div>
         </div>
       </div>
 
       <div className="container px-4 py-12">
-        <Link href="/" className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-black mb-8">
+        <Link
+          href="/"
+          className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-black mb-8"
+        >
           <ChevronLeft className="mr-1 h-4 w-4" />
           Retour à l'accueil
         </Link>
@@ -66,17 +83,22 @@ export default function CategoryLayout({ title, description, products, heroImage
                 )}
               </div>
               <h3 className="text-lg font-medium text-black">{product.name}</h3>
-              <p className="text-sm text-gray-600 mt-1">{product.price.toLocaleString()} F CFA</p>
-              <Button
-                variant="outline"
-                className="w-full mt-4 border-black text-black hover:bg-black hover:text-white transition-colors"
-              >
-                Voir le produit
-              </Button>
+              <p className="text-sm text-gray-600 mt-1">
+                {product.price.toLocaleString()} F CFA
+              </p>
+
+              <Link href={`${product.lien}`}>
+                <Button
+                  variant="outline"
+                  className="w-full mt-4 border-black text-black hover:bg-black hover:text-white transition-colors"
+                >
+                  Voir le produit
+                </Button>
+              </Link>
             </div>
           ))}
         </div>
       </div>
     </div>
-  )
+  );
 }

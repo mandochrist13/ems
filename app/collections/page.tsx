@@ -8,21 +8,21 @@ export default function CollectionsPage() {
       id: 1,
       name: "Collection Coquillage",
       description: "Des bijoux inspirés par la beauté naturelle des coquillages",
-      image: "/images/cowrie-set.png",
+      image: "/images/boucle noeud.jpg",
       slug: "coquillage",
     },
     {
       id: 2,
       name: "Collection Cercle d'Or",
       description: "L'élégance intemporelle des formes circulaires",
-      image: "/images/circle-set.png",
+      image: "/images/bracelet_eye.jpg",
       slug: "cercle-or",
     },
     {
       id: 3,
       name: "Collection Fleur Dorée",
       description: "La délicatesse florale capturée en or",
-      image: "/images/flower-necklace.png",
+      image: "/images/collier_boucle_treffle.jpg",
       slug: "fleur-doree",
     },
   ]
@@ -73,28 +73,28 @@ export default function CollectionsPage() {
             <ProductCard
               name="Bracelet Torsadé Or"
               price="299"
-              image="/images/twisted-bracelet.png"
+              image="/images/boucle_zero2.jpg"
               slug="bracelet-torsade-or"
             />
             <ProductCard
               name="Bracelet Cordon Noir & Or"
               price="249"
-              image="/images/black-gold-bracelet.png"
+              image="/images/croix_blanche.jpg"
               slug="bracelet-cordon-noir-or"
             />
             <ProductCard
               name="Collier Chaîne Émeraude"
               price="349"
-              image="/images/emerald-necklace.png"
+              image="/images/gourmette_chaine.jpg"
               slug="collier-chaine-emeraude"
             />
             <ProductCard
               name="Collier Cristal Cascade"
               price="399"
-              image="/images/crystal-necklace.png"
+              image="/images/médaillon_croix.jpg"
               slug="collier-cristal-cascade"
             />
-            <ProductCard
+            {/* <ProductCard
               name="Ensemble Chaîne Luxe"
               price="599"
               image="/images/chain-set.png"
@@ -105,7 +105,7 @@ export default function CollectionsPage() {
               price="279"
               image="/images/bamboo-bracelet.png"
               slug="bracelet-bambou-or"
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -113,7 +113,14 @@ export default function CollectionsPage() {
   )
 }
 
-function ProductCard({ name, price, image, slug }) {
+interface ProductCard {
+  name: string;
+  price: string;
+  image: string;
+  slug: string;
+}
+
+function ProductCard({ name, price, image, slug }: ProductCard) {
   return (
     <Link href={`/produits/${slug}`} className="group">
       <div className="aspect-square relative overflow-hidden rounded-lg mb-4">

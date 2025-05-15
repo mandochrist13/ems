@@ -6,7 +6,7 @@ export default function ChainesPage() {
       id: 1,
       name: "Chaîne Maille Forçat",
       price: 259000,
-      image: "/images/chain-set.png",
+      image: "/images/colier_boucle.jpg",
       slug: "chaine-maille-forcat",
       isBestseller: true,
     },
@@ -14,52 +14,11 @@ export default function ChainesPage() {
       id: 2,
       name: "Chaîne Maille Vénitienne",
       price: 279000,
-      image: "/images/chain-set.png",
+      image: "/images/médaillon_croix.jpg",
       slug: "chaine-maille-venitienne",
     },
-    {
-      id: 3,
-      name: "Chaîne Maille Figaro",
-      price: 299000,
-      image: "/images/chain-set.png",
-      slug: "chaine-maille-figaro",
-      isNew: true,
-    },
-    {
-      id: 4,
-      name: "Chaîne Maille Serpent",
-      price: 319000,
-      image: "/images/chain-set.png",
-      slug: "chaine-maille-serpent",
-    },
-    {
-      id: 5,
-      name: "Chaîne Maille Gourmette",
-      price: 289000,
-      image: "/images/chain-set.png",
-      slug: "chaine-maille-gourmette",
-    },
-    {
-      id: 6,
-      name: "Chaîne Maille Corde",
-      price: 269000,
-      image: "/images/chain-set.png",
-      slug: "chaine-maille-corde",
-    },
-    {
-      id: 7,
-      name: "Chaîne Maille Jaseron",
-      price: 249000,
-      image: "/images/chain-set.png",
-      slug: "chaine-maille-jaseron",
-    },
-    {
-      id: 8,
-      name: "Chaîne Maille Palmier",
-      price: 329000,
-      image: "/images/chain-set.png",
-      slug: "chaine-maille-palmier",
-    },
+ 
+    
   ]
 
   return (

@@ -10,56 +10,8 @@ export default function BaguesPage() {
       slug: "bague-solitaire-classique",
       isBestseller: true,
     },
-    {
-      id: 2,
-      name: "Alliance Or Jaune",
-      price: 349000,
-      image: "/placeholder.svg?height=500&width=500",
-      slug: "alliance-or-jaune",
-    },
-    {
-      id: 3,
-      name: "Bague Cocktail Pierre Précieuse",
-      price: 599000,
-      image: "/placeholder.svg?height=500&width=500",
-      slug: "bague-cocktail-pierre-precieuse",
-      isNew: true,
-    },
-    {
-      id: 4,
-      name: "Bague Tressée Deux Ors",
-      price: 429000,
-      image: "/placeholder.svg?height=500&width=500",
-      slug: "bague-tressee-deux-ors",
-    },
-    {
-      id: 5,
-      name: "Bague Chevalière Gravable",
-      price: 379000,
-      image: "/placeholder.svg?height=500&width=500",
-      slug: "bague-chevaliere-gravable",
-    },
-    {
-      id: 6,
-      name: "Bague Éternité Diamants",
-      price: 799000,
-      image: "/placeholder.svg?height=500&width=500",
-      slug: "bague-eternite-diamants",
-    },
-    {
-      id: 7,
-      name: "Bague Nœud Infini",
-      price: 329000,
-      image: "/placeholder.svg?height=500&width=500",
-      slug: "bague-noeud-infini",
-    },
-    {
-      id: 8,
-      name: "Bague Fleur Vintage",
-      price: 459000,
-      image: "/placeholder.svg?height=500&width=500",
-      slug: "bague-fleur-vintage",
-    },
+   
+   
   ]
 
   return (

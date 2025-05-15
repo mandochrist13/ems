@@ -66,7 +66,7 @@ export default function Home() {
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 md:gap-12 mt-12">
               <div className="relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/images/circle-set.png?height=600&width=400"
+                  src="/images/boucle-diams.jpg?height=600&width=400"
                   alt="Collection de bagues"
                   width={400}
                   height={600}
@@ -86,7 +86,7 @@ export default function Home() {
               </div>
               <div className="relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/images/flower-necklace.png?height=600&width=400"
+                  src="/images/colier_boucle.jpg?height=600&width=400"
                   alt="Collection de colliers"
                   width={400}
                   height={600}
@@ -106,7 +106,7 @@ export default function Home() {
               </div>
               <div className="relative group overflow-hidden rounded-lg">
                 <Image
-                  src="/images/bamboo-bracelet.png?height=600&width=400"
+                  src="/images/bracelet_treffle.jpg?height=600&width=400"
                   alt="Collection de bracelets"
                   width={400}
                   height={600}

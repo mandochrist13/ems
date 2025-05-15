@@ -3,7 +3,7 @@ const produits = [
     {
       id: 1,
       slug: "bracelet-bamboo",
-      photo: "/images/bamboo-bracelet.png?height=400&width=300",
+      photo: "/images/boucle noeud.jpg?height=400&width=300",
       prix: 5000,
       titre: "Bracelet bamboo en or ",
       description:
@@ -41,7 +41,7 @@ const produits = [
     {
         id: 2,
         slug: "bracelet-cordon-noir-or",
-        photo: "/images/black-gold-bracelet.png?height=400&width=300",
+        photo: "/images/bracelet_eye.jpg?height=400&width=300",
         prix: 5000,
         titre: "Bracelet Noir et or",
         description:
@@ -79,7 +79,7 @@ const produits = [
       {
         id: 3,
         slug: "collier-chaine-or",
-        photo: "/images/chain-set.png?height=400&width=300",
+        photo: "/images/colier_boucle.jpg?height=400&width=300",
         prix: 5000,
         titre: "Médaillon en or chaine",
         description:
@@ -117,7 +117,7 @@ const produits = [
       {
         id: 4,
         slug: "collier-pointe-or",
-        photo: "/images/circle-set.png?height=400&width=300",
+        photo: "/images/croix_blanche.jpg?height=400&width=300",
         prix: 5000,
         titre: "Collier & paire de boucle style pointe",
         description:
@@ -155,7 +155,7 @@ const produits = [
       {
         id: 5,
         slug: "collier-cowrie",
-        photo: "/images/cowrie-set.png?height=400&width=300",
+        photo: "/images/gourmette_chaine_argent.jpg?height=400&width=300",
         prix: 5000,
         titre: "Collier & paire de boucle style cowrie",
         description:
@@ -193,7 +193,7 @@ const produits = [
       {
         id: 6,
         slug: "collier-cristal",
-        photo: "/images/crystal-necklace.png?height=400&width=300",
+        photo: "/images/médaillon_croix.jpg?height=400&width=300",
         prix: 5000,
         titre: "Collier en or chic",
         description:
@@ -231,7 +231,7 @@ const produits = [
       {
         id: 7,
         slug: "collier-emerald",
-        photo: "/images/emerald-necklace.png?height=400&width=300",
+        photo: "/images/boucle_zero2.jpg?height=400&width=300",
         prix: 5000,
         titre: "Collier or et médaillon Emeraude",
         description:
@@ -269,7 +269,7 @@ const produits = [
       {
         id: 8,
         slug: "collier-flower",
-        photo: "/images/flower-necklace.png?height=400&width=300",
+        photo: "/images/boucle_crochet.jpg?height=400&width=300",
         prix: 5000,
         titre: "Collier or et médaillon Fleur",
         description:

@@ -113,7 +113,14 @@ export default function CollectionsPage() {
   )
 }
 
-function ProductCard({ name, price, image, slug }) {
+interface ProductCard {
+  name: string;
+  price: string;
+  image: string;
+  slug: string;
+}
+
+function ProductCard({ name, price, image, slug }: ProductCard) {
   return (
     <Link href={`/produits/${slug}`} className="group">
       <div className="aspect-square relative overflow-hidden rounded-lg mb-4">

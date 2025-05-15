@@ -87,7 +87,7 @@ export default function CategoryLayout({
                 {product.price.toLocaleString()} F CFA
               </p>
 
-              <Link href={product.lien}>
+              <Link href={`${product.lien}`}>
                 <Button
                   variant="outline"
                   className="w-full mt-4 border-black text-black hover:bg-black hover:text-white transition-colors"
